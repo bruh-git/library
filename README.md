@@ -62,11 +62,11 @@ def test_rent_regular_book_short_duration():
     book = Book("Refactoring", Book.REGULAR)
     r = Rental(book, 2)
 
-    c = Client("Fulano")
+    c = Client("Bruna")
     c.add_rental(r)
     
     expected_report = (
-        "Rental summary for Fulano\n"
+        "Rental summary for Bruna\n"
         "- Refactoring: 2\n"
         "Total: 2\n"
         "Points: 1"
